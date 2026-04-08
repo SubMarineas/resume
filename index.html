@@ -36,6 +36,9 @@
             border-bottom: 3px solid var(--primary);
             padding-bottom: 25px;
             margin-bottom: 35px;
+        }
+
+        .header-main {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -43,33 +46,31 @@
 
         .header-left h1 { margin: 0; font-size: 42px; color: var(--primary); letter-spacing: 2px;}
         .header-left h2 { margin: 10px 0 0 0; font-size: 20px; color: var(--secondary); font-weight: 600;}
-        .base-info { margin-top: 15px; font-size: 15px; color: var(--text-light); }
         
-        .header-right { 
-            text-align: right; 
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .contact-info a { color: var(--secondary); text-decoration: none; font-weight: 500;}
+        .contact-info a:hover { text-decoration: underline; }
+
+        .base-info { 
+            margin-top: 15px; 
+            font-size: 15px; 
+            color: var(--text-light);
+        }
+        
+        .contact-row {
+            margin-top: 15px;
+            font-size: 14px;
+            color: var(--text-light);
             display: flex;
-            flex-direction: column;
-            gap: 8px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 8px;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            padding: 8px 14px;
-            border-radius: 20px;
-            border: 1px solid #bae6fd;
-            font-size: 13px;
-            transition: all 0.2s ease;
-        }
-        .contact-item:hover {
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-            transform: translateX(-3px);
-        }
-        .contact-item a { color: var(--secondary); text-decoration: none; font-weight: 600;}
-        .contact-item a:hover { text-decoration: underline; }
-        .contact-icon { font-size: 14px; }
+        .contact-row a { color: var(--secondary); text-decoration: none; font-weight: 500;}
+        .contact-row a:hover { text-decoration: underline; }
 
         h3 {
             font-size: 22px;
@@ -126,17 +127,19 @@
 <div class="container">
     <!-- 头部信息 -->
     <header>
-        <div class="header-left">
-            <h1>许政根</h1>
-            <h2>大模型与算法开发工程师</h2>
-            <div class="base-info">男 | 28岁 | 7年工作经验 | 籍贯：萍乡 | 非党员</div>
-        </div>
-        <div class="header-right">
-            <div class="contact-item"><span class="contact-icon">📞</span> 15697558751</div>
-            <div class="contact-item"><span class="contact-icon">📧</span> <a href="mailto:a1004995307@163.com">a1004995307@163.com</a></div>
-            <div class="contact-item"><span class="contact-icon">🌐</span> <a href="https://submarineas.github.io/te_learning/#/" target="_blank">个人主页</a></div>
-            <div class="contact-item"><span class="contact-icon">✍️</span> <a href="https://blog.csdn.net/submarineas" target="_blank">CSDN: submarineas</a></div>
-            <div class="contact-item"><span class="contact-icon">📱</span> <a href="https://open.weixin.qq.com/qr/code?username=gh_1bead14b920b" target="_blank">许同学说</a></div>
+        <div class="header-main">
+            <div class="header-left">
+                <h1>许政根</h1>
+                <h2>大模型与算法开发工程师</h2>
+                <div class="base-info">男 | 28岁 | 7年工作经验 | 籍贯：萍乡 | 非党员</div>
+            </div>
+            <div class="contact-info">
+                <div>📞 15697558751</div>
+                <div>📧 <a href="mailto:a1004995307@163.com">a1004995307@163.com</a></div>
+                <div>🌐 <a href="https://submarineas.github.io/te_learning/#/" target="_blank">个人主页</a></div>
+                <div>✍️ <a href="https://blog.csdn.net/submarineas" target="_blank">CSDN: submarineas</a></div>
+                <div>📱 <a href="https://open.weixin.qq.com/qr/code?username=gh_1bead14b920b" target="_blank">微信公众号：许同学说</a></div>
+            </div>
         </div>
     </header>
 
