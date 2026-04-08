@@ -93,7 +93,7 @@
         }
 
         .card {
-            margin-bottom: 35px;
+            margin-bottom: 15px;
             page-break-inside: avoid; 
         }
 
@@ -107,9 +107,9 @@
         .card-title { font-size: 18px; font-weight: bold; color: var(--primary); }
         .card-role { font-size: 16px; color: var(--secondary); margin-left: 15px; font-weight: 600;}
         .card-date { font-size: 15px; color: var(--text-light); font-weight: 500; font-family: monospace; font-size: 16px;}
-        .project-name { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 10px; padding-left: 2px; border-left: 3px solid var(--secondary); padding-left: 8px;}
+        .project-name { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 5px; padding-left: 2px; border-left: 3px solid var(--secondary); padding-left: 8px;}
 
-        .work-desc { font-size: 14.5px; color: var(--text-main); margin-bottom: 15px; line-height: 1.7; text-align: justify; background-color: #f8fafc; padding: 12px 18px; border-radius: 6px; border-left: 3px solid #cbd5e1;}
+        .work-desc { font-size: 14.5px; color: var(--text-main); margin-bottom: 10px; line-height: 1.7; text-align: justify; background-color: #f8fafc; padding: 12px 18px; border-radius: 6px; border-left: 3px solid #cbd5e1;}
 
         ul { padding-left: 22px; margin-top: 0; }
         li { margin-bottom: 10px; text-align: justify; }
@@ -121,21 +121,22 @@
             body { background: none; padding: 0; }
             .container { 
                 box-shadow: none; 
-                padding: 20px 30px; 
+                padding: 15px 25px; 
                 max-width: 100%;
                 margin: 0;
             }
             a { text-decoration: none; color: var(--text-main); }
             .page-break { page-break-before: always; }
-            .work-desc { background-color: transparent; padding: 0; border-left: none; }
+            .work-desc { background-color: transparent; padding: 0; border-left: none; margin-bottom: 8px; }
             header { 
                 border-bottom: 2px solid var(--primary); 
-                padding-bottom: 10px; 
-                margin-bottom: 15px; 
+                padding-bottom: 8px; 
+                margin-bottom: 10px; 
             }
-            h3 { margin-top: 15px; margin-bottom: 10px; }
-            .card { margin-bottom: 10px; }
-            li { margin-bottom: 3px; }
+            h3 { margin: 10px 0 8px 0; }
+            .card { margin-bottom: 8px; page-break-inside: avoid; }
+            .project-name { margin-bottom: 5px; }
+            li { margin-bottom: 2px; }
         }
     </style>
 </head>
