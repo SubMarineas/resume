@@ -173,7 +173,7 @@
             <div class="project-name">核心项目：事件检测系统</div>
             <ul>
                 <li><strong>核心 CV 算法研发与多场景落地：</strong>负责多类交通与安防场景的视觉算法闭环。主导构建车道线数据集并基于 DeepLabv3 训练分割模型，实现车道检测与天气能见度分析；基于 YOLOX 联合 ByteTrack，针对无人机高空视角实现大规模人群轨迹提取与可视化。持续迭代烟雾、恶劣天气等检测模型。</li>
-                <li><strong>底层框架重构与极致性能优化：</strong>持续主导自研算法框架的迭代与规范化（API与文档）。在 Python 端自主研发 GPU 硬件解码模块，使模型前处理速度提升 30%。针对高并发瓶颈，打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限史诗级突破至 80 路以上。（注：曾在2020年企业竞赛中重构精简比赛框架，成功解决极端高码流+无网环境下的系统崩溃与检测延迟问题。）</li>
+                <li><strong>底层框架重构与极致性能优化：</strong>持续主导自研算法框架的迭代与规范化（API与文档）。在 Python 端自主研发 GPU 硬件解码模块，使模型前处理速度提升 30%。针对高并发瓶颈，打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限突破至 80 路以上。（注：曾在2020年企业竞赛中重构精简比赛框架，成功解决极端高码流+无网环境下的系统崩溃与检测延迟问题。）</li>
                 <li><strong>异构算力兼容与纯国产化适配：</strong>构建高兼容性的算力运行环境。深耕 NVIDIA 体系，制作兼容全系显卡（如 RTX5000/6000、A2/A10/A30/A100等）的容器，并研究 DeepStream 框架提升推理效率；主导“信创”适配，与华为昇腾、寒武纪、天数智芯等头部国产算力厂商深度合作，完成底层框架与模型的国产化替代与部署。</li>
                 <li><strong>百台级集群部署与高可用治理：</strong>全权负责系统的大规模交付与运维。引入 Ansible 自动化运维工具，结合 nvidia-docker + docker-compose 架构，高效完成江西、广东、辽宁等省份百余台服务器集群的自动化统一部署。建立常态化压测机制，针对 CPU 负载、内存及显存等指标进行结构性调优，保障高并发业务场景的稳定性。</li>
             </ul>
@@ -183,6 +183,20 @@
     <!-- 开源与竞赛项目经历 -->
     <section>
         <h3>🔬 开源与竞赛项目经历</h3>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">雅思作文助手 (IELTS Assistant) <span class="card-role">核心开发</span></div>
+                <div class="card-date">2024.08 - 2024.10</div>
+            </div>
+            <ul>
+                <li><strong>多模型集成与 API 调用：</strong>集成 Gemini（pro/1.5-flash 等）、Deepseek 等大模型，实现 API 接口标准化调用，包含密钥管理、请求参数配置及响应处理，支持多模型动态切换。</li>
+                <li><strong>RAG 检索增强与知识库构建：</strong>对近 2 万条雅思范文数据进行汇总整理，基于 FAISS 构建向量知识库。对较新的雅思范文进行 RAG 增强检索，显著提升回答的时效性与可靠性。</li>
+                <li><strong>Function Call 智能评分与工具调用：</strong>设计评分智能体工作流，通过 Function Call 机制实现自动化打分。结合 Task Response、Coherence 等评分维度，构建评分维度的结构化提取与输出。</li>
+                <li><strong>模型微调与能力优化：</strong>使用 internlm-7B 基座进行 QLoRA 微调，针对雅思写作场景优化模型表现。整合 pdfplumber 对 PDF 语料进行自动化提取与处理。</li>
+                <li><strong>Streamlit 全栈开发与部署：</strong>基于 Streamlit 搭建写作-分析-练习多模块 Web 应用，设计分级提示词模板（轻微/中等/高度改写），实现会话状态管理及功能模块化。部署上线阿里云魔搭创空间，获浪潮云优秀作品奖：<a href="https://www.modelscope.cn/studios/submarineas/IELTS_assistant" target="_blank">https://www.modelscope.cn/studios/submarineas/IELTS_assistant</a></li>
+            </ul>
+        </div>
 
         <div class="card">
             <div class="card-header">
