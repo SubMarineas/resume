@@ -109,8 +109,6 @@
         .card-date { font-size: 15px; color: var(--text-light); font-weight: 500; font-family: monospace; font-size: 16px;}
         .project-name { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 10px; padding-left: 2px; border-left: 3px solid var(--secondary); padding-left: 8px;}
 
-        .work-desc { font-size: 14.5px; color: var(--text-main); margin-bottom: 15px; line-height: 1.7; text-align: justify; background-color: #f8fafc; padding: 12px 18px; border-radius: 6px; border-left: 3px solid #cbd5e1;}
-
         ul { padding-left: 22px; margin-top: 0; }
         li { margin-bottom: 10px; text-align: justify; }
         
@@ -122,7 +120,6 @@
             .container { box-shadow: none; padding: 0; max-width: 100%; }
             a { text-decoration: none; color: var(--text-main); }
             .page-break { page-break-before: always; }
-            .work-desc { background-color: transparent; padding: 0; border-left: none; }
         }
     </style>
 </head>
@@ -167,32 +164,21 @@
         </ul>
     </section>
 
-    <!-- 工作经历 -->
+    <!-- 工作与项目经历 -->
     <section>
-        <h3>💼 工作经历</h3>
+        <h3>💼 工作与项目经历</h3>
         
         <div class="card">
             <div class="card-header">
                 <div class="card-title">深圳智慧城市发展集团有限公司 <span class="card-role">大模型开发工程师</span></div>
                 <div class="card-date">2024.09 - 至今</div>
             </div>
-            <div class="work-desc">
-                <strong>岗位主要职责：</strong>全面主导语料数据中台算法层整体设计，建立多模态数据处理技术底座；带领团队研发覆盖全场景的200+多模态算子，打通数据特征提取链路；构建"标注-处理-安全-质检"一体化数据治理方案，并深度集成 AIOPs 体系实现算力资源智能调度；主导核心算法与华为昇腾 Ascend 910B 平台的国产化适配优化，解决硬件兼容性与性能瓶颈；任职期间沉淀技术创新，完成相关专利撰写 4 篇。
-            </div>
-            
             <div class="project-name">核心项目：XLC 大模型多模态语料处理平台</div>
-                <li><strong>核心架构搭建：</strong>主导语料数据中台算法层整体设计，建立支撑多模态数据处理的技术底座；完成内部 pip 智城源代码包构建，打通 Jenkins 自动化流水线。</li>
-                <li><strong>多模态算子研发：</strong>覆盖视频、图像、文本、音频全场景，独立 / 带领团队开发 200+ 算子，打通从原始数据到可用特征的关键链路。</li>
-                <li><strong>全流程能力闭环：</strong>构建"标注 - 处理 - 安全 - 质检"一体化数据治理方案，保障语料数据的合规性、准确性与可用性。</li>
-                <li><strong>智能资源调度：</strong>深度集成 AIOPs 体系，实现资源动态分配与智能调度，降低资源浪费，提升中台整体运行效率。</li>
-                <li><strong>国产化适配攻坚：</strong>完成核心算法与昇腾 Ascend 910B 平台的适配优化，解决硬件兼容性与性能瓶颈，助力业务国产化落地。</li>
-                <li><strong>知识产权：</strong>完成专利撰写 4 篇。</li>
-            </ul>
-            <div class="project-name" style="margin-top: 15px;">🏆 核心项目：XLC 大模型多模态语料处理平台</div>
             <ul>
-                <li>负责语料平台算法架构技术选型，搭建并维护内部算子开发脚手架，完成老旧算子服务重构。设计多云存储（MinIO/华为OBS/天翼云）统一对接方案，使算子接入与迭代效率大幅提升。</li>
-                <li>主导开发近 300 个全模态（文本/图像/音频/视频/文档）算子，覆盖数据清洗、标注、增强等全链路。结合业务需求界定大小模型能力边界，独立完成预训练/微调模型选型及推理服务开发。</li>
-                <li>针对大模型，采用 vllm-ascend 与 MindIE 框架实现高性能推理；针对中小模型，基于 torch_npu 及 ATC 工具转 OM 格式进行推理部署。建立监控机制，沉淀最佳实践文档。</li>
+                <li><strong>平台架构与工程化建设：</strong>负责语料平台算法架构技术选型，搭建并维护内部算子开发脚手架，完成老旧算子服务重构。设计多云存储（MinIO/华为OBS/天翼云）统一对接方案，构建内部 pip 智城源代码包并打通 Jenkins 流水线，使算子接入与迭代效率大幅提升。</li>
+                <li><strong>全模态算法开发与模型落地：</strong>主导开发近 300 个全模态（文本/图像/音频/视频/文档）算子，覆盖数据清洗、标注、增强等全链路。结合业务需求界定大小模型能力边界，独立完成预训练/微调模型选型及推理服务开发，满足各类语料处理场景需求。</li>
+                <li><strong>国产化算力攻坚：</strong>主导并完成全部算子在华为昇腾 910B 服务器的迁移与适配。针对大模型，采用 vllm-ascend 与 MindIE 框架实现高性能推理；针对中小模型，基于 torch_npu 及 ATC 工具转 OM 格式进行推理部署；联动灵雀云打通 NPU 算子自动化上架流程。</li>
+                <li><strong>性能调优与全生命周期运维：</strong>建立算子服务运行状态与资源占用监控机制。持续优化算子并发执行效率与显存占用；沉淀多模态处理与昇腾适配的最佳实践文档，赋能团队并保障平台级语料处理任务稳定高效运行。</li>
             </ul>
         </div>
 
@@ -201,12 +187,12 @@
                 <div class="card-title">深圳橙色魔方信息技术有限公司 <span class="card-role">算法开发工程师</span></div>
                 <div class="card-date">2024.04 - 2024.08</div>
             </div>
+            <div class="project-name">核心项目：行为识别系统 (v1.0 至 v1.3)</div>
             <ul>
-                <li><strong>系统架构设计：</strong>独立完成船舶识别系统与人员行为识别系统的开发，全面负责两款系统的架构设计、开发与部署。</li>
-                <li><strong>多模型调度框架：</strong>构建多模型调度框架，将人脸识别、行为分析与目标检测（救生衣）等多个模型解耦集成，实现底层统一调用。</li>
-                <li><strong>算法研发落地：</strong>基于 InsightFace (buffalo_s模型) 开发人脸识别功能，在船舶复杂场景下实现 70% 的检测召回率与 90% 以上的识别准确率；使用 ResNet50 独立训练救生衣穿戴检测模型。</li>
-                <li><strong>性能优化：</strong>深入对比 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式，实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测。</li>
-                <li><strong>工程化交付：</strong>负责从服务器空环境装机到微服务上线的端到端交付，编写 Dockerfile 制作标准化镜像，打通自动化 CI/CD 流水线。</li>
+                <li><strong>系统架构重构与多模型框架设计：</strong>主导系统从 v1.0 到 v1.3 的全面升级。独立负责整个行为识别框架的架构设计与代码开发；构建多模型调度框架，将人脸识别、行为分析与目标检测（救生衣）等多个模型解耦集成，实现底层统一调用。</li>
+                <li><strong>核心视觉算法研发：</strong>基于 InsightFace (buffalo_s模型) 开发人脸识别功能，制定标准化 API 流程文档并与 Java 后端无缝对接，在船舶复杂场景下实现 70% 的检测召回率与 90% 以上的识别准确率。使用 ResNet50 独立训练救生衣穿戴检测模型，并接入多模型框架。</li>
+                <li><strong>高并发视频流处理与性能优化：</strong>深入对比分析 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式。降低算力开销，最终实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测与事件上报。</li>
+                <li><strong>全链路工程化部署与 CI/CD 交付：</strong>负责新系统从服务器空环境装机到微服务上线的端到端交付。设计上线策略，编写 Dockerfile 制作标准化基础镜像；通过 Docker-Compose 启动部署，并协同运维团队打通自动化 CI/CD 流水线。</li>
             </ul>
         </div>
 
@@ -215,19 +201,12 @@
                 <div class="card-title">广州国交润万交通信息有限公司 <span class="card-role">算法开发工程师</span></div>
                 <div class="card-date">2020.05 - 2023.09</div>
             </div>
+            <div class="project-name">核心项目：事件检测系统</div>
             <ul>
-                <li><strong>需求与开发：</strong>参与项目需求讨论，理解并明确项目目标；进行 Python 开发，实现项目功能，保证代码质量与性能。</li>
-                <li><strong>接口规范：</strong>编写接口文档，规范接口设计，提高代码的可读性和可维护性。</li>
-                <li><strong>运维部署：</strong>负责中期维护和部署工作，确保项目稳定运行，及时发现和解决问题。</li>
-                <li><strong>系统对接：</strong>后期对接各厂商，实现系统间的数据交互和功能整合。</li>
-                <li><strong>技术探索：</strong>探索新的技术方向，为项目的持续优化和发展提供支持。</li>
-            </ul>
-            <div class="project-name" style="margin-top: 15px;">🏆 核心项目：事件检测系统</div>
-            <ul>
-                <li>负责多类交通与安防场景的视觉算法闭环。主导构建车道线数据集并基于 DeepLabv3 训练分割模型，实现车道检测与天气能见度分析；基于 YOLOX 联合 ByteTrack，针对无人机高空视角实现大规模人群轨迹提取与可视化。</li>
-                <li>在 Python 端自主研发 GPU 硬件解码模块，使模型前处理速度提升 30%。打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限突破至 80 路以上。</li>
-                <li>深耕 NVIDIA 体系，制作兼容全系显卡（如 RTX5000/6000、A2/A10/A30/A100等）的容器；主导"信创"适配，与华为昇腾、寒武纪、天数智芯等国产算力厂商深度合作。</li>
-                <li>引入 Ansible 自动化运维工具，结合 nvidia-docker + docker-compose 架构，高效完成江西、广东、辽宁等省份百余台服务器集群的自动化统一部署。建立常态化压测机制，保障高并发业务场景的稳定性。</li>
+                <li><strong>核心 CV 算法研发与多场景落地：</strong>负责多类交通与安防场景的视觉算法闭环。主导构建车道线数据集并基于 DeepLabv3 训练分割模型，实现车道检测与天气能见度分析；基于 YOLOX 联合 ByteTrack，针对无人机高空视角实现大规模人群轨迹提取与可视化。持续迭代烟雾、恶劣天气等检测模型。</li>
+                <li><strong>底层框架重构与极致性能优化：</strong>持续主导自研算法框架的迭代与规范化（API与文档）。在 Python 端自主研发 GPU 硬件解码模块，使模型前处理速度提升 30%。针对高并发瓶颈，打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限突破至 80 路以上。（注：曾在2020年企业竞赛中重构精简比赛框架，成功解决极端高码流+无网环境下的系统崩溃与检测延迟问题。）</li>
+                <li><strong>异构算力兼容与纯国产化适配：</strong>构建高兼容性的算力运行环境。深耕 NVIDIA 体系，制作兼容全系显卡（如 RTX5000/6000、A2/A10/A30/A100等）的容器，并研究 DeepStream 框架提升推理效率；主导“信创”适配，与华为昇腾、寒武纪、天数智芯等头部国产算力厂商深度合作，完成底层框架与模型的国产化替代与部署。</li>
+                <li><strong>百台级集群部署与高可用治理：</strong>全权负责系统的大规模交付与运维。引入 Ansible 自动化运维工具，结合 nvidia-docker + docker-compose 架构，高效完成江西、广东、辽宁等省份百余台服务器集群的自动化统一部署。建立常态化压测机制，针对 CPU 负载、内存及显存等指标进行结构性调优，保障高并发业务场景的稳定性。</li>
             </ul>
         </div>
     </section>
@@ -251,53 +230,15 @@
 
         <div class="card">
             <div class="card-header">
-                <div class="card-title">深圳智慧城市发展集团有限公司 <span class="card-role">大模型开发工程师</span></div>
-                <div class="card-date">2024.09 - 至今</div>
+                <div class="card-title">雅思作文助手 (IELTS Assistant) <span class="highlight">🏆 浪潮云优秀作品奖</span> <span class="card-role">核心开发</span></div>
+                <div class="card-date">2024.08 - 2024.10</div>
             </div>
-            <div class="work-desc">
-                <strong>岗位主要职责：</strong>全面主导语料数据中台算法层整体设计，建立多模态数据处理技术底座；带领团队研发覆盖全场景的200+多模态算子，打通数据特征提取链路；构建"标注-处理-安全-质检"一体化数据治理方案，并深度集成 AIOPs 体系实现算力资源智能调度；主导核心算法与华为昇腾 Ascend 910B 平台的国产化适配优化，解决硬件兼容性与性能瓶颈；任职期间沉淀技术创新，完成相关专利撰写 4 篇。
-            </div>
-            
-            <div class="project-name">核心项目：XLC 大模型多模态语料处理平台</div>
             <ul>
-                <li><strong>平台架构与工程化建设：</strong>负责语料平台算法架构技术选型，搭建并维护内部算子开发脚手架，完成老旧算子服务重构。设计多云存储（MinIO/华为OBS/天翼云）统一对接方案，构建内部 pip 智城源代码包并打通 Jenkins 流水线，使算子接入与迭代效率大幅提升。</li>
-                <li><strong>全模态算法开发与模型落地：</strong>主导开发近 300 个全模态（文本/图像/音频/视频/文档）算子，覆盖数据清洗、标注、增强等全链路。结合业务需求界定大小模型能力边界，独立完成预训练/微调模型选型及推理服务开发，满足各类语料处理场景需求。</li>
-                <li><strong>国产化算力部署与调度：</strong>主导并完成全部算子在华为昇腾 910B 服务器的迁移与适配。针对大模型，采用 vllm-ascend 与 MindIE 框架实现高性能推理；针对中小模型，基于 torch_npu 及 ATC 工具转 OM 格式进行推理部署；联动灵雀云打通 NPU 算子自动化上架流程。</li>
-                <li><strong>性能调优与全生命周期运维：</strong>建立算子服务运行状态与资源占用监控机制。持续优化算子并发执行效率与显存占用；沉淀多模态处理与昇腾适配的最佳实践文档，赋能团队并保障平台级语料处理任务稳定高效运行。</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">深圳橙色魔方信息技术有限公司 <span class="card-role">算法开发工程师</span></div>
-                <div class="card-date">2024.04 - 2024.08</div>
-            </div>
-            <div class="work-desc">
-                <strong>岗位主要职责：</strong>独立完成船舶识别系统与人员行为识别系统的开发，全面负责两款系统的架构设计、开发部署等算法工程化相关工作。
-            </div>
-            <div class="project-name">核心项目：行为识别系统 (v1.0 至 v1.3)</div>
-            <ul>
-                <li><strong>系统架构重构与多模型框架设计：</strong>主导系统从 v1.0 到 v1.3 的全面升级。独立负责整个行为识别框架的架构设计与代码开发；构建多模型调度框架，将人脸识别、行为分析与目标检测（救生衣）等多个模型解耦集成，实现底层统一调用。</li>
-                <li><strong>核心视觉算法研发：</strong>基于 InsightFace (buffalo_s模型) 开发人脸识别功能，制定标准化 API 流程文档并与 Java 后端无缝对接，在船舶复杂场景下实现 70% 的检测召回率与 90% 以上的识别准确率。使用 ResNet50 独立训练救生衣穿戴检测模型，并接入多模型框架。</li>
-                <li><strong>高并发视频流处理与性能优化：</strong>深入对比分析 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式。降低算力开销，最终实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测与事件上报。</li>
-                <li><strong>全链路工程化部署与 CI/CD 交付：</strong>负责新系统从服务器空环境装机到微服务上线的端到端交付。设计上线策略，编写 Dockerfile 制作标准化基础镜像；通过 Docker-Compose 启动部署，并协同运维团队打通自动化 CI/CD 流水线。</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">广州国交润万交通信息有限公司 <span class="card-role">算法开发工程师</span></div>
-                <div class="card-date">2020.05 - 2023.09</div>
-            </div>
-            <div class="work-desc">
-                <strong>岗位主要职责：</strong>基于"图像/视频处理 + 深度学习 + 后端开发 + 运维测试"全栈技术体系参与公司业务闭环。参与核心需求解析与架构讨论，主导 Python 算法功能开发；编写规范化 API 文档并主导中期部署与维护；后期负责对接多方硬件厂商实现系统整合，并持续跟进前沿技术为项目优化提供支持。
-            </div>
-            <div class="project-name">核心项目：事件检测系统</div>
-            <ul>
-                <li><strong>核心 CV 算法研发与多场景落地：</strong>负责多类交通与安防场景的视觉算法闭环。主导构建车道线数据集并基于 DeepLabv3 训练分割模型，实现车道检测与天气能见度分析；基于 YOLOX 联合 ByteTrack，针对无人机高空视角实现大规模人群轨迹提取与可视化。持续迭代烟雾、恶劣天气等检测模型。</li>
-                <li><strong>底层框架重构与极致性能优化：</strong>持续主导自研算法框架的迭代与规范化（API与文档）。在 Python 端自主研发 <strong>GPU 硬件解码模块</strong>，使模型前处理速度提升 30%。针对高并发瓶颈，打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限突破至 80 路以上。（注：曾在2020年企业竞赛中重构精简比赛框架，成功解决极端高码流+无网环境下的系统崩溃问题。）</li>
-                <li><strong>异构算力兼容与纯国产化适配：</strong>构建高兼容性的算力运行环境。深耕 NVIDIA 体系，制作兼容全系显卡（如 RTX5000/6000、A2/A10/A30/A100等）的容器，并研究 DeepStream 框架提升推理效率；主导"信创"适配，与华为昇腾、寒武纪、天数智芯等国产算力厂商深度合作，完成底层框架与模型的国产化替代与部署。</li>
-                <li><strong>百台级集群部署与高可用治理：</strong>全权负责系统的大规模交付与运维。引入 Ansible 自动化运维工具，结合 nvidia-docker + docker-compose 架构，完成江西、广东、辽宁等省份百余台服务器集群的自动化统一部署。建立常态化压测机制，针对 CPU 负载、内存及显存等指标进行结构性调优，保障高并发业务的稳定性。</li>
+                <li><strong>多模型集成与 API 调用：</strong>集成 Gemini（pro/1.5-flash 等）、Deepseek 等大模型，实现 API 接口标准化调用，包含密钥管理、请求参数配置及响应处理，支持多模型动态切换。</li>
+                <li><strong>RAG 检索增强与知识库构建：</strong>对近 2 万条雅思范文数据进行汇总整理，基于 FAISS 构建向量知识库。对较新的雅思范文进行 RAG 增强检索，显著提升回答的时效性与可靠性。</li>
+                <li><strong>Function Call 智能评分与工具调用：</strong>设计评分智能体工作流，通过 Function Call 机制实现自动化打分。结合 Task Response、Coherence 等评分维度，构建评分维度的结构化提取与输出。</li>
+                <li><strong>模型微调与能力优化：</strong>使用 internlm-7B 基座进行 QLoRA 微调，针对雅思写作场景优化模型表现。整合 pdfplumber 对 PDF 语料进行自动化提取与处理。</li>
+                <li><strong>Streamlit 全栈开发与部署：</strong>基于 Streamlit 搭建写作-分析-练习多模块 Web 应用，设计分级提示词模板（轻微/中等/高度改写），实现会话状态管理及功能模块化。部署上线阿里云魔搭创空间：<a href="https://www.modelscope.cn/studios/submarineas/IELTS_assistant" target="_blank">https://www.modelscope.cn/studios/submarineas/IELTS_assistant</a></li>
             </ul>
         </div>
     </section>
