@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>许政根的简历 - 大模型与算法开发工程师</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;       
+            --secondary: #2563eb;     
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-color: #f1f5f9;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 60px 80px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 { margin: 0; font-size: 42px; color: var(--primary); letter-spacing: 2px;}
+        .header-left h2 { margin: 10px 0 0 0; font-size: 20px; color: var(--secondary); font-weight: 600;}
+        .base-info { margin-top: 15px; font-size: 15px; color: var(--text-light); }
+        
+        .header-right { text-align: right; font-size: 14px; line-height: 1.9;}
+        .header-right a { color: var(--secondary); text-decoration: none; font-weight: 500;}
+        .header-right a:hover { text-decoration: underline; }
+
+        h3 {
+            font-size: 22px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 45px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        .card {
+            margin-bottom: 35px;
+            page-break-inside: avoid; 
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .card-title { font-size: 18px; font-weight: bold; color: var(--primary); }
+        .card-role { font-size: 16px; color: var(--secondary); margin-left: 15px; font-weight: 600;}
+        .card-date { font-size: 15px; color: var(--text-light); font-weight: 500; font-family: monospace; font-size: 16px;}
+        .project-name { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 10px; padding-left: 2px; border-left: 3px solid var(--secondary); padding-left: 8px;}
+
+        ul { padding-left: 22px; margin-top: 0; }
+        li { margin-bottom: 10px; text-align: justify; }
+        
+        strong { color: #0f172a; font-weight: 600; }
+        .highlight { background-color: #f0fdf4; color: #166534; padding: 2px 6px; border-radius: 4px; font-size: 14px; margin-right: 5px;}
+
+        @media print {
+            body { background: none; padding: 0; }
+            .container { box-shadow: none; padding: 0; max-width: 100%; }
+            a { text-decoration: none; color: var(--text-main); }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 头部信息 -->
+    <header>
+        <div class="header-left">
+            <h1>许政根</h1>
+            <h2>大模型与算法开发工程师</h2>
+            <div class="base-info">男 | 28岁 | 7年工作经验 | 籍贯：萍乡 | 非党员</div>
+        </div>
+        <div class="header-right">
+            <div>📞 15697558751</div>
+            <div>📧 a1004995307@163.com</div>
+            <div>🌐 <a href="https://submarineas.github.io/te_learning/#/" target="_blank">个人主页 (GitHub Pages)</a></div>
+            <div>✍️ <a href="https://blog.csdn.net/submarineas" target="_blank">CSDN博客 (百万浏览: submarineas)</a></div>
+            <div>📱 微信公众号：许同学说</div>
+        </div>
+    </header>
+
+    <!-- 个人优势 -->
+    <section>
+        <h3>💡 核心竞争力 & 个人优势</h3>
+        <ul>
+            <li><strong>异构算力与纯国产化适配：</strong>熟练掌握 NVIDIA 生态（DeepStream等），并在项目中落地过华为昇腾 (Ascend 910B)、寒武纪、天数智芯等异构算力的模型迁移与系统级部署。</li>
+            <li><strong>大模型工程化落地：</strong>深入掌握 LangChain & RAG 技术栈，曾构建检索增强型推理应用并优化知识匹配精度与响应速度。拥有开源 LLM 训练调优及应用开发全流程经验。</li>
+            <li><strong>深度学习与模型部署：</strong>熟练运用 PyTorch，可独立完成大模型网络构建、推理性能优化（算子融合、量化压缩）及训练链路搭建，支撑模型从实验到生产的高效部署。</li>
+            <li><strong>AI Infra 与后端架构：</strong>擅长结合后端技术栈搭建大模型 Infra 服务。熟练使用 Django/Flask 开发推理 API，通过 RabbitMQ/Kafka 实现任务异步调度，依托 Redis 缓存推理结果，提升服务吞吐量与稳定性。</li>
+            <li><strong>计算机视觉 (CV) 落地：</strong>精通 OpenCV，具备丰富 CV 落地经验。可独立完成图像预处理（去噪、resize 等）、特征提取（SIFT/SURF）、目标检测辅助标注及视频帧分析（关键帧提取等），满足工业质检、视觉识别等场景需求。</li>
+            <li><strong>高并发与性能优化：</strong>擅长用 Python 多进程/多线程优化 CV 任务，通过多线程并行处理视频流，结合 TCP/UDP 实现图像跨设备实时传输，保障系统低延迟与高吞吐。</li>
+            <li><strong>大规模数据处理：</strong>联动数据处理能力支撑 CV/NLP 大规模落地，熟练使用 PySpark 处理 TB 级数据集（清洗、标注校验），通过 Pandas/NumPy 完成特征统计与异常筛选，为模型训练提供高质量数据底座。</li>
+            <li><strong>技术影响力：</strong>长期坚持技术输出，拥有百万浏览量 CSDN 博客及个人公众号，具备极强的自驱力与前沿技术钻研精神。</li>
+        </ul>
+    </section>
+
+    <!-- 工作与项目经历 -->
+    <section>
+        <h3>💼 工作与项目经历</h3>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">深圳智慧城市发展集团有限公司 <span class="card-role">大模型开发工程师</span></div>
+                <div class="card-date">2024.09 - 至今</div>
+            </div>
+            <div class="project-name">核心项目：XLC 大模型多模态语料处理平台</div>
+            <ul>
+                <li><strong>平台架构与工程化建设：</strong>负责语料平台算法架构技术选型，搭建并维护内部算子开发脚手架，完成老旧算子服务重构。设计多云存储（MinIO/华为OBS/天翼云）统一对接方案，构建内部 pip 智城源代码包并打通 Jenkins 流水线，使算子接入与迭代效率大幅提升。</li>
+                <li><strong>全模态算法开发与模型落地：</strong>主导开发近 300 个全模态（文本/图像/音频/视频/文档）算子，覆盖数据清洗、标注、增强等全链路。结合业务需求界定大小模型能力边界，独立完成预训练/微调模型选型及推理服务开发，满足各类语料处理场景需求。</li>
+                <li><strong>国产化算力攻坚：</strong>主导并完成全部算子在华为昇腾 910B 服务器的迁移与适配。针对大模型，采用 vllm-ascend 与 MindIE 框架实现高性能推理；针对中小模型，基于 torch_npu 及 ATC 工具转 OM 格式进行推理部署；联动灵雀云打通 NPU 算子自动化上架流程。</li>
+                <li><strong>性能调优与全生命周期运维：</strong>建立算子服务运行状态与资源占用监控机制。持续优化算子并发执行效率与显存占用；沉淀多模态处理与昇腾适配的最佳实践文档，赋能团队并保障平台级语料处理任务稳定高效运行。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">深圳橙色魔方信息技术有限公司 <span class="card-role">算法开发工程师</span></div>
+                <div class="card-date">2024.04 - 2024.08</div>
+            </div>
+            <div class="project-name">核心项目：行为识别系统 (v1.0 至 v1.3)</div>
+            <ul>
+                <li><strong>系统架构重构与多模型框架设计：</strong>主导系统从 v1.0 到 v1.3 的全面升级。独立负责整个行为识别框架的架构设计与代码开发；构建多模型调度框架，将人脸识别、行为分析与目标检测（救生衣）等多个模型解耦集成，实现底层统一调用。</li>
+                <li><strong>核心视觉算法研发：</strong>基于 InsightFace (buffalo_s模型) 开发人脸识别功能，制定标准化 API 流程文档并与 Java 后端无缝对接，在船舶复杂场景下实现 70% 的检测召回率与 90% 以上的识别准确率。使用 ResNet50 独立训练救生衣穿戴检测模型，并接入多模型框架。</li>
+                <li><strong>高并发视频流处理与性能优化：</strong>深入对比分析 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式。降低算力开销，最终实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测与事件上报。</li>
+                <li><strong>全链路工程化部署与 CI/CD 交付：</strong>负责新系统从服务器空环境装机到微服务上线的端到端交付。设计上线策略，编写 Dockerfile 制作标准化基础镜像；通过 Docker-Compose 启动部署，并协同运维团队打通自动化 CI/CD 流水线。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">广州国交润万交通信息有限公司 <span class="card-role">算法开发工程师</span></div>
+                <div class="card-date">2020.05 - 2023.09</div>
+            </div>
+            <div class="project-name">核心项目：事件检测系统</div>
+            <ul>
+                <li><strong>核心 CV 算法研发与多场景落地：</strong>负责多类交通与安防场景的视觉算法闭环。主导构建车道线数据集并基于 DeepLabv3 训练分割模型，实现车道检测与天气能见度分析；基于 YOLOX 联合 ByteTrack，针对无人机高空视角实现大规模人群轨迹提取与可视化。持续迭代烟雾、恶劣天气等检测模型。</li>
+                <li><strong>底层框架重构与极致性能优化：</strong>持续主导自研算法框架的迭代与规范化（API与文档）。在 Python 端自主研发 GPU 硬件解码模块，使模型前处理速度提升 30%。针对高并发瓶颈，打通跨语言协同，配合 C++ 流媒体团队实现 Python 调用 C++ 底层解码（华为硬件环境），将单机并发处理上限史诗级突破至 80 路以上。（注：曾在2020年企业竞赛中重构精简比赛框架，成功解决极端高码流+无网环境下的系统崩溃与检测延迟问题。）</li>
+                <li><strong>异构算力兼容与纯国产化适配：</strong>构建高兼容性的算力运行环境。深耕 NVIDIA 体系，制作兼容全系显卡（如 RTX5000/6000、A2/A10/A30/A100等）的容器，并研究 DeepStream 框架提升推理效率；主导“信创”适配，与华为昇腾、寒武纪、天数智芯等头部国产算力厂商深度合作，完成底层框架与模型的国产化替代与部署。</li>
+                <li><strong>百台级集群部署与高可用治理：</strong>全权负责系统的大规模交付与运维。引入 Ansible 自动化运维工具，结合 nvidia-docker + docker-compose 架构，高效完成江西、广东、辽宁等省份百余台服务器集群的自动化统一部署。建立常态化压测机制，针对 CPU 负载、内存及显存等指标进行结构性调优，保障高并发业务场景的稳定性。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 开源与竞赛项目经历 -->
+    <section>
+        <h3>🔬 开源与竞赛项目经历</h3>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Kaggle WSDM Cup - Multilingual Chatbot Arena <span class="card-role">算法开发</span></div>
+                <div class="card-date">2024.12 - 2025.01</div>
+            </div>
+            <ul>
+                <li><strong>极限显存优化与量化微调 (QLoRA)：</strong>针对大模型单卡算力瓶颈，基于 <code>bitsandbytes</code> 与 <code>PEFT</code> 对 Gemma-2 9B 进行 4-bit NF4 精度量化微调。冻结主干网络仅训 LoRA Adapter (秩 8/16)，成功将训练显存消耗从 36GB+ 骤降至 8-12GB，单卡实现高参数量模型高效训练，并规避灾难性遗忘。</li>
+                <li><strong>分布式训练与超参调优工程：</strong>采用 <code>Transformers</code> 结合 <code>Accelerate</code> 构建分布式训练环境。引入梯度累积技术补偿小批量偏差；辅以余弦学习率衰减与早停策略，极大提升模型收敛稳定性。训练侧产出 LoRA 权重严格控制在 &lt;100MB。</li>
+                <li><strong>双 GPU 流水线并行与推理极限加速：</strong>为突破单卡推理显存限制，自主设计双卡流水线并行架构，将 Gemma-2 42 层拆分至两卡协作。配合 <code>ShardedMaxTokensCollator</code> 做动态分片批处理，结合 FP16 混合精度，使 9B 模型推理吞吐量跃升 50%+。</li>
+                <li><strong>数据工程与全链路一致性校验：</strong>深度定制 LMSYSDataset 的空值填充与文本标记逻辑；严格拉齐训练端 Prompt 构造与推理侧 ProcessorPAB 的对话格式。推理时通过 PeftModel 动态挂载底座与 Adapter，实现线上推理准确率与验证指标偏差严格控制在 &lt;3%。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 荣誉奖项与竞赛成就 -->
+    <section>
+        <h3>🏆 荣誉奖项 & 竞赛成就</h3>
+        
+        <div class="card" style="margin-bottom: 25px;">
+            <div style="font-weight: bold; color: var(--primary); margin-bottom: 10px; font-size: 16px;">🥇 算法与数据科学竞赛成就</div>
+            <ul>
+                <li><span class="highlight">Kaggle 竞赛</span> <strong>最高全球排名：787名</strong>。共获 1 银 3 铜，包含 Child Mind Institute - Detect Sleep States (银牌)、CSIRO - Image2Biomass Prediction (铜牌)、BirdCLEF 2023 (铜牌)、RSNA Screening Mammography Breast (铜牌)。</li>
+                <li><span class="highlight">国内顶级竞赛</span> <strong>CCKS2025-文档端到端结构化评测 Top 6 (6/409)</strong>；阿里天池：食物声音识别 <strong>Top 1 (1/1792)</strong>、地表建筑物识别 <strong>Top 0.2% (11/5006)</strong>、心跳信号分类预测 <strong>Top 0.3% (13/4356)</strong>。</li>
+            </ul>
+
+            <div style="font-weight: bold; color: var(--primary); margin-bottom: 10px; font-size: 16px; margin-top: 20px;">🧮 数学建模竞赛</div>
+            <ul>
+                <li>2018年 <strong>美国大学生数学建模竞赛 (MCM/ICM) H 奖</strong>（二等奖）</li>
+                <li>获得多项国家级/省级大奖：包含 2018 电工杯三等奖、五一数学建模联赛三等奖、MathorCup 三等奖；2017 APMCM 亚太地区二等奖等。</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
+
+
