@@ -119,10 +119,23 @@
 
         @media print {
             body { background: none; padding: 0; }
-            .container { box-shadow: none; padding: 0; max-width: 100%; }
+            .container { 
+                box-shadow: none; 
+                padding: 20px 30px; 
+                max-width: 100%;
+                margin: 0;
+            }
             a { text-decoration: none; color: var(--text-main); }
             .page-break { page-break-before: always; }
             .work-desc { background-color: transparent; padding: 0; border-left: none; }
+            header { 
+                border-bottom: 2px solid var(--primary); 
+                padding-bottom: 10px; 
+                margin-bottom: 15px; 
+            }
+            h3 { margin-top: 15px; margin-bottom: 10px; }
+            .card { margin-bottom: 10px; }
+            li { margin-bottom: 3px; }
         }
     </style>
 </head>
