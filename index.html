@@ -118,28 +118,31 @@
         .highlight { background-color: #f0fdf4; color: #166534; padding: 2px 6px; border-radius: 4px; font-size: 14px; margin-right: 5px;}
 
         @media print {
-            body { background: none; padding: 0; }
+            body { background: none; padding: 0; margin: 0; }
             .container { 
                 box-shadow: none; 
-                padding: 15px 25px; 
+                padding: 10px 20px; 
                 max-width: 100%;
                 margin: 0;
             }
             a { text-decoration: none; color: var(--text-main); }
-            .page-break { page-break-before: always; }
-            .work-desc { background-color: transparent; padding: 0; border-left: none; margin-bottom: 8px; }
+            .work-desc { background-color: transparent; padding: 0; border-left: none; margin-bottom: 5px; }
             header { 
                 border-bottom: 2px solid var(--primary); 
-                padding-bottom: 8px; 
-                margin-bottom: 10px; 
+                padding-bottom: 5px; 
+                margin-bottom: 8px; 
             }
             h3 { 
-                margin: 15px 0 10px 0; 
+                margin: 10px 0 5px 0; 
+                padding-bottom: 4px;
             }
-            .card { margin-bottom: 8px; page-break-inside: avoid; }
-            .project-name { margin-bottom: 5px; }
-            li { margin-bottom: 2px; }
-            section { margin-bottom: 10px; }
+            section { margin: 0; padding: 0; }
+            .card { margin: 0 0 8px 0; page-break-inside: avoid; }
+            .project-name { margin: 3px 0; }
+            li { margin-bottom: 1px; }
+            .work-desc { font-size: 12px; }
+            .card-header { margin-bottom: 3px; }
+            ul { margin: 0; padding-left: 15px; }
         }
     </style>
 </head>
@@ -188,7 +191,7 @@
     <section>
         <h3>💼 工作与项目经历</h3>
         
-        <div class="card">
+        <div class="card" style="margin-bottom: 10px;">
             <div class="card-header">
                 <div class="card-title">深圳智慧城市发展集团有限公司 <span class="card-role">大模型开发工程师</span></div>
                 <div class="card-date">2024.09 - 至今</div>
@@ -205,7 +208,7 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card" style="margin-bottom: 10px;">
             <div class="card-header">
                 <div class="card-title">深圳橙色魔方信息技术有限公司 <span class="card-role">算法开发工程师</span></div>
                 <div class="card-date">2024.04 - 2024.08</div>
@@ -222,7 +225,7 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card" style="margin-bottom: 10px;">
             <div class="card-header">
                 <div class="card-title">广州国交润万交通信息有限公司 <span class="card-role">算法开发工程师</span></div>
                 <div class="card-date">2020.05 - 2023.09</div>
@@ -244,7 +247,7 @@
     <section>
         <h3>🔬 开源与竞赛项目经历</h3>
 
-        <div class="card">
+        <div class="card" style="margin-bottom: 10px;">
             <div class="card-header">
                 <div class="card-title">Kaggle WSDM Cup - Multilingual Chatbot Arena <span class="card-role">算法</span></div>
                 <div class="card-date">2024.12 - 2025.01</div>
@@ -257,7 +260,7 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card" style="margin-bottom: 10px;">
             <div class="card-header">
                 <div class="card-title">雅思作文助手 (IELTS Assistant) <span class="highlight">🏆 浪潮云优秀作品奖</span> <span class="card-role">核心开发</span></div>
                 <div class="card-date">2024.08 - 2024.10</div>
@@ -272,18 +275,18 @@
         </div>
     </section>
 
-    <!-- 荣誉奖项与竞赛成就 -->
+        <!-- 荣誉奖项与竞赛成就 -->
     <section>
         <h3>🏆 荣誉奖项 & 竞赛成就</h3>
         
-        <div class="card" style="margin-bottom: 25px;">
-            <div style="font-weight: bold; color: var(--primary); margin-bottom: 10px; font-size: 16px;">🥇 算法与数据科学竞赛成就</div>
+        <div class="card" style="margin-bottom: 10px;">
+            <div style="font-weight: bold; color: var(--primary); margin-bottom: 5px; font-size: 16px;">🥇 算法与数据科学竞赛成就</div>
             <ul>
                 <li><span class="highlight">阿里天池</span> 食物声音识别 <strong>Top 1 (1/1792)</strong>、地表建筑物识别 <strong>Top 0.2% (11/5006)</strong>、心跳信号分类预测 <strong>Top 0.3% (13/4356)</strong>、CCKS2025-文档端到端结构化评测 <strong>Top 6 (6/409)</strong>。</li>
                 <li><span class="highlight">Kaggle 竞赛</span> <strong>最高全球排名：787名</strong>。共获 1 银 3 铜，包含 Child Mind Institute - Detect Sleep States (银牌)、CSIRO - Image2Biomass Prediction (铜牌)、BirdCLEF 2023 (铜牌)、RSNA Screening Mammography Breast (铜牌)。</li>
             </ul>
 
-            <div style="font-weight: bold; color: var(--primary); margin-bottom: 10px; font-size: 16px; margin-top: 20px;">🧮 数学建模竞赛</div>
+            <div style="font-weight: bold; color: var(--primary); margin-bottom: 5px; font-size: 16px; margin-top: 10px;">🧮 数学建模竞赛</div>
             <ul>
                 <li>2018年 <strong>美国大学生数学建模竞赛 (MCM/ICM) H 奖</strong>（二等奖）</li>
                 <li>获得多项国家级/省级大奖：包含 2018 电工杯三等奖、五一数学建模联赛三等奖、MathorCup 三等奖；2017 APMCM 亚太地区二等奖等。</li>
