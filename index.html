@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>许政根的简历 - 大模型与算法开发工程师</title>
     <style>
@@ -93,8 +93,7 @@
         }
 
         .card {
-            margin-bottom: 35px;
-            page-break-inside: avoid; 
+            margin-bottom: 25px; /* 修改：缩小了原本的边距，并且删除了防止分页的属性 */
         }
 
         .card-header {
@@ -117,12 +116,48 @@
         strong { color: #0f172a; font-weight: 600; }
         .highlight { background-color: #f0fdf4; color: #166534; padding: 2px 6px; border-radius: 4px; font-size: 14px; margin-right: 5px;}
 
+        /* 修改核心：打印样式优化 */
         @media print {
-            body { background: none; padding: 0; }
-            .container { box-shadow: none; padding: 0; max-width: 100%; }
+            body { 
+                background: none; 
+                padding: 0; 
+                line-height: 1.5; /* 减小打印行高，极大地压缩篇幅 */
+            }
+            .container { 
+                box-shadow: none; 
+                padding: 0; 
+                max-width: 100%; 
+            }
             a { text-decoration: none; color: var(--text-main); }
-            .page-break { page-break-before: always; }
-            .work-desc { background-color: transparent; padding: 0; border-left: none; }
+            
+            /* 允许卡片内部分页，减小卡片间距 */
+            .card { 
+                page-break-inside: auto; 
+                margin-bottom: 15px; 
+            }
+            
+            /* 避免标题在页脚，而正文在下一页 */
+            h3, .card-header, .project-name, .highlight { 
+                page-break-after: avoid; 
+            }
+
+            /* 压缩各类标题和模块的上下间距 */
+            h3 { 
+                margin-top: 20px; 
+                margin-bottom: 12px; 
+            }
+            header {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+            
+            /* 恢复工作描述透明背景 */
+            .work-desc { 
+                background-color: transparent; 
+                padding: 0; 
+                border-left: none; 
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -154,10 +189,10 @@
 
     <!-- 个人优势 -->
     <section>
-        <h3>💡 核心竞争力 & 个人优势</h3>
+        <h3>💡 核心竞争力 &amp; 个人优势</h3>
         <ul>
             <li><strong>异构算力与纯国产化适配：</strong>熟练掌握 NVIDIA 生态（DeepStream等），并在项目中落地过华为昇腾 (Ascend 910B)、寒武纪、天数智芯等异构算力的模型迁移与系统级部署。</li>
-            <li><strong>大模型工程化落地：</strong>深入掌握 LangChain & RAG 技术栈，曾构建检索增强型推理应用并优化知识匹配精度与响应速度。拥有开源 LLM 训练调优及应用开发全流程经验。</li>
+            <li><strong>大模型工程化落地：</strong>深入掌握 LangChain &amp; RAG 技术栈，曾构建检索增强型推理应用并优化知识匹配精度与响应速度。拥有开源 LLM 训练调优及应用开发全流程经验。</li>
             <li><strong>深度学习与模型部署：</strong>熟练运用 PyTorch，可独立完成大模型网络构建、推理性能优化（算子融合、量化压缩）及训练链路搭建，支撑模型从实验到生产的高效部署。</li>
             <li><strong>AI Infra 与后端架构：</strong>擅长结合后端技术栈搭建大模型 Infra 服务。熟练使用 Django/Flask 开发推理 API，通过 RabbitMQ/Kafka 实现任务异步调度，依托 Redis 缓存推理结果，提升服务吞吐量与稳定性。</li>
             <li><strong>计算机视觉 (CV) 落地：</strong>精通 OpenCV，具备丰富 CV 落地经验。可独立完成图像预处理（去噪、resize 等）、特征提取（SIFT/SURF）、目标检测辅助标注及视频帧分析（关键帧提取等），满足工业质检、视觉识别等场景需求。</li>
@@ -255,9 +290,9 @@
         </div>
     </section>
 
-        <!-- 荣誉奖项与竞赛成就 -->
+    <!-- 荣誉奖项与竞赛成就 -->
     <section>
-        <h3>🏆 荣誉奖项 & 竞赛成就</h3>
+        <h3>🏆 荣誉奖项 &amp; 竞赛成就</h3>
         
         <div class="card" style="margin-bottom: 25px;">
             <div style="font-weight: bold; color: var(--primary); margin-bottom: 10px; font-size: 16px;">🥇 算法与数据科学竞赛成就</div>
