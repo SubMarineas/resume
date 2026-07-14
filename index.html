@@ -235,7 +235,7 @@
             <ul>
                 <li><strong>系统架构重构与多模型框架设计：</strong>主导系统从 v1.0 到 v1.3 的全面升级。独立负责整个行为识别框架的架构设计与代码开发；构建多模型调度框架，将人脸识别、行为分析与目标检测（救生衣）等多个模型解耦集成，实现底层统一调用。</li>
                 <li><strong>核心视觉算法研发：</strong>基于 InsightFace (buffalo_s模型) 开发人脸识别功能，制定标准化 API 流程文档并与 Java 后端无缝对接，在船舶复杂场景下实现 70% 的检测召回率与 90% 以上的识别准确率。使用 ResNet50 独立训练救生衣穿戴检测模型，并接入多模型框架。</li>
-                <li><strong>高并发视频流处理与性能优化：</strong>深入对比分析 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式。降低算力开销，最终实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测与事件上报。</li>
+                <li><strong>高并发视频流处理与性能优化：</strong>在 Intel 个人主机搭载 NVIDIA RTX A2000 专业显卡的硬件环境下，深入对比分析 CPU 软解码与 GPU 硬件解码机制，重构系统使其自适应双解码模式。降低算力开销，最终实现单节点稳定支撑 20 路以上 RTSP 视频流的实时并发检测与事件上报。</li>
                 <li><strong>全链路工程化部署与 CI/CD 交付：</strong>负责新系统从服务器空环境装机到微服务上线的端到端交付。设计上线策略，编写 Dockerfile 制作标准化基础镜像；通过 Docker-Compose 启动部署，并协同运维团队打通自动化 CI/CD 流水线。</li>
             </ul>
         </div>
@@ -261,6 +261,19 @@
     <!-- 开源与竞赛项目经历 -->
     <section>
         <h3>🔬 开源与竞赛项目经历</h3>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">HiClaw 多 Agent 智能办公助手系统 <span class="card-role">核心开发 · 大模型开发</span></div>
+                <div class="card-date">2025.04 - 2025.06</div>
+            </div>
+            <ul>
+                <li><strong>多 Agent 架构设计与 K8s 多机部署：</strong>基于 HiClaw 开源体系设计"一人一容器"隔离架构，集成 Higress AI 网关统一管控认证/限流/凭证，以 Matrix (Tuwunel) 协议承载 Agent 间端到端加密通信，MinIO 按用户隔离 Bucket 持久化数据。验证 K8s Incluster 多节点调度与 controller leader election 高可用，产出万人级分片部署方案与按需唤醒/空闲休眠调度策略。</li>
+                <li><strong>动态 Skills 生命周期管理系统：</strong>设计 Skills 注册发现、Git 版本树管理（stable/beta/dev/experimental 多状态流转）与回滚机制。实现 5 级渐进式加载策略（预加载→按需→执行→结果→惰性卸载），配合技能缓存池最小化常驻资源占用，使 Agent 启动仅加载必要技能、执行完成后自动释放临时资源。</li>
+                <li><strong>Letta 分层记忆系统集成：</strong>将技能执行结果经 Memory Classifier 智能分类（状态类→Core Memory / 知识类→Archival Memory / 日志类→丢弃），构建 Memory Sync Controller 实现优先级队列批量写入、缓存优先分层查询及版本合并冲突解决，支撑 Agent 跨会话状态恢复与知识累积。</li>
+                <li><strong>沙箱实验与可行性验证：</strong>设计并执行 Docker + Hermes 全链路沙箱实验，覆盖用户注册→容器启动→动态创建 Skill→LLM 调用→报告生成→容器销毁 10 阶段流程。基于实测建立 Worker 资源模型（常驻 150-500Mi、峰值 1-2Gi），系统分析 Matrix/对象存储/Gateway/LLM 限流等瓶颈，产出试点→区县→全市级三阶段压测与上线路线。</li>
+            </ul>
+        </div>
 
         <div class="card">
             <div class="card-header">
@@ -307,6 +320,14 @@
                 <li>获得多项国家级/省级大奖：包含 2018 电工杯三等奖、五一数学建模联赛三等奖、MathorCup 三等奖；2017 APMCM 亚太地区二等奖等。</li>
             </ul>
         </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section>
+        <h3>🏫 教育背景</h3>
+        <ul>
+            <li>东华理工大学 · 电气自动化专业 · 2015.09 - 2018.06</li>
+        </ul>
     </section>
 
 </div>
