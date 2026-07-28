@@ -221,6 +221,12 @@
                 <li><strong>国产化算力攻坚：</strong>主导并完成全部算子在华为昇腾 910B 服务器的迁移与适配。针对大模型，采用 vllm-ascend 与 MindIE 框架实现高性能推理；针对中小模型，基于 torch_npu 及 ATC 工具转 OM 格式进行推理部署；联动灵雀云打通 NPU 算子自动化上架流程。</li>
                 <li><strong>性能调优与全生命周期运维：</strong>建立算子服务运行状态与资源占用监控机制。持续优化算子并发执行效率与显存占用；沉淀多模态处理与昇腾适配的最佳实践文档，赋能团队并保障平台级语料处理任务稳定高效运行。</li>
             </ul>
+            <div class="project-name">其他项目：AgentModel 智能体平台</div>
+            <ul>
+                <li><strong>基于 DGX GB10 服务器的多模型统一推理服务：</strong>基于 DGX GB10 服务器，使用 vLLM + Docker 部署 DeepSeek、Qwen、BGE、Qwen-VL、Gemma 等大模型，支撑文本对话、视觉理解、OCR 识别、Embedding 等多类型模型统一接入。设计模型按需启停、健康检测与异常自动重启机制，实现多模型统一 API 管理。</li>
+                <li><strong>公文文档智能分办 Agent：</strong>基于标注公文数据构建训练/验证/测试集，设计完整实验流程（数据准备→规则回测→LLM 验证→产物打包），制定七流提示词架构与硬规则优先级体系。经多轮迭代后达到准确率要求。支持全流程优化提示词，实现简单 loop engineering。</li>
+                <li><strong>智能体可观测性建设：</strong>负责智能体可观测性开发，对接 Langfuse 实现全链路追踪。在 Dify ChatFlow 编排智能体创建时自动配置 Langfuse 埋点，通过埋点处理完成多轮对话链路追踪，调用链与对话数据统一入库 ClickHouse，支撑智能体运行状态的可视化监控与问题定位。</li>
+            </ul>
         </div>
 
         <div class="card">
